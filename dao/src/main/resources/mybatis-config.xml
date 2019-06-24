@@ -11,6 +11,12 @@
         <property name="password" value="123456"/>
     </properties>
 
+    <plugins>
+        <plugin interceptor="com.wshlovercn.mybatistudy.dao.plugin.ExamplePlugin">
+            <property name="someProperty" value="100"/>
+        </plugin>
+    </plugins>
+
     <environments default="test">
         <environment id="test">
             <transactionManager type="JDBC"></transactionManager>

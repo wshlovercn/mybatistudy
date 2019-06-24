@@ -26,6 +26,9 @@ public class App {
         try {
             User user = sqlSession.selectOne("UserMapper.selectUser", 2);
             System.out.println(user);
+
+            User user1 = sqlSession.selectOne("UserMapper.selectUser", 2);
+            System.out.println(user1);
         } finally {
             sqlSession.close();
         }
